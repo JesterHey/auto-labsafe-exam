@@ -97,7 +97,7 @@ def find_similar_values(value_to_search,page=0,filename='quzibase.csv',threshold
     value_to_search = value_to_search.replace(')', '\\)')
 
 
-    with open(filename, 'r') as f:
+    with open(filename, 'r',encoding='utf8') as f:
         reader = csv.reader(f)
 
         for row in reader:
