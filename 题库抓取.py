@@ -9,7 +9,7 @@ import csv
 # opt= Options()
 # opt.add_experimental_option("detach", True)
 # opt.add_argument('--headless')
-for _ in range(4):
+for _ in range(1):
     url = 'https://labsafe.hnu.edu.cn/labexam/index.php'
     safari = Chrome()
     safari.get(url)

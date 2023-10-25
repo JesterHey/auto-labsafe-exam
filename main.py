@@ -72,7 +72,7 @@ username_entry.bind('<Return>', get_input)
 
 # 创建密码标签和输入框
 tk.Label(root, text="个人门户密码").pack(pady=10)
-password_entry = tk.Entry(root)
+password_entry = tk.Entry(root,show='*')
 password_entry.pack(pady=10)
 password_entry.bind('<Return>', get_input)
 
