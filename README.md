@@ -2,11 +2,11 @@
 本程序用于自动完成湖大实验室安全考试答题  
 推荐在虚拟环境中运行本程序  
 ## 环境配置  
-1. 确保安装Google Chrome浏览器和对应版本的驱动  
+1. 确保安装Google Chrome浏览器和对应版本的驱动chromedriver  
    [谷歌浏览器下载](https://www.google.com/intl/zh-CN/chrome/)  
    [谷歌浏览器驱动下载(请下载对应大版本)](https://googlechromelabs.github.io/chrome-for-testing/)  
-   完成后，请将谷歌浏览器驱动放置到您电脑上Chrome的安装目录下
-   [安装教程](https://www.cnblogs.com/lfri/p/10542797.html)
+   下载完成后，将chromedriver配置到相应位置，具体教程如下：  
+   [谷歌浏览器驱动chromedriver配置教程](https://www.cnblogs.com/lfri/p/10542797.html)
 2. 所需Python库
    在电脑终端依次输入  
   * selenium `pip install selenium`
