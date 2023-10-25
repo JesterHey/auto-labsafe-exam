@@ -16,8 +16,8 @@ for _ in range(1):
     time.sleep(1)
     el = safari.find_element(By.XPATH,'//*[@id="formExam"]/div/a/input')
     el.click()
-    username = input('username:')
-    password = input('password:')
+    username = input('username:') #获取学号
+    password = input('password:') #获取个人门户密码
     safari.find_element(By.XPATH,'//*[@id="username"]').send_keys(username)
     time.sleep(1)
     safari.find_element(By.XPATH,'//*[@id="password"]').send_keys(password)
