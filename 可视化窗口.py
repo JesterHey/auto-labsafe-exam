@@ -24,7 +24,7 @@ x_pos = (screen_width / 2) - (window_width / 2)
 y_pos = (screen_height / 2) - (window_height / 2)
 root.geometry(f"{window_width}x{window_height}+{int(x_pos)}+{int(y_pos)}")
 
-# 设置5秒后自动关闭窗口
+# 设置3秒后自动关闭窗口
 root.after(3000, close_window)
 
 root.mainloop()
