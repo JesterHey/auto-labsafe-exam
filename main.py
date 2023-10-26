@@ -89,7 +89,7 @@ root.mainloop()
 
 opt= Options()
 opt.add_experimental_option("detach", True)
-def find_similar_values(value_to_search,page=0,filename='quizbase.csv',threshold=0.5): #设置匹配度阈值
+def find_similar_values(value_to_search,page=0,filename='quizbase.csv',threshold=0.9): #设置匹配度阈值
     results = []
 
     value_to_search = value_to_search.replace('?', '\\?')
@@ -171,7 +171,7 @@ for page in range(10): #i是页码
         page_source = safari.page_source
         htmltxt = etree.HTML(page_source)
         for tihao in range(1,11):
-            qtxt = htmltxt.xpath(f'//*[@id="dati"]/div[{tihao}]/h3/text()')[0].split('、')[-1]
+            qtxt = htmltxt.xpath(f'//*[@id="dati"]/div[{tihao}]/h3/text()')[0].split('、',1)[-1]
             answer = find_similar_values(value_to_search=qtxt,page=page)
             answerlist.append(answer)
         co=1
@@ -192,7 +192,7 @@ for page in range(10): #i是页码
         page_source = safari.page_source
         htmltxt = etree.HTML(page_source)
         for tihao in range(1,11):
-            qtxt = htmltxt.xpath(f'//*[@id="dati"]/div[{tihao}]/h3/text()')[0].split('、')[-1]
+            qtxt = htmltxt.xpath(f'//*[@id="dati"]/div[{tihao}]/h3/text()')[0].split('、',1)[-1]
             answer = find_similar_values(page=page,value_to_search=qtxt)
             answerlist.append(answer)
         co = 1
@@ -212,7 +212,7 @@ for page in range(10): #i是页码
         page_source = safari.page_source
         htmltxt = etree.HTML(page_source)
         for tihao in range(1,11):
-            qtxt = htmltxt.xpath(f'//*[@id="dati"]/div[{tihao}]/h3/text()')[0].split('、')[-1]
+            qtxt = htmltxt.xpath(f'//*[@id="dati"]/div[{tihao}]/h3/text()')[0].split('、',1)[-1]
             answer = find_similar_values(value_to_search=qtxt,page=page)
             answerlist.append(answer)
         co = 1
