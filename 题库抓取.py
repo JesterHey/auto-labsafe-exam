@@ -9,7 +9,7 @@ import csv
 # opt= Options()
 # opt.add_experimental_option("detach", True)
 # opt.add_argument('--headless')
-for _ in range(1):
+for _ in range(5): #一次进行5轮抓取，每次抓取100道题目
     url = 'https://labsafe.hnu.edu.cn/labexam/index.php'
     safari = Chrome()
     safari.get(url)
