@@ -20,7 +20,11 @@
 4. 完成后，您只需稍作等待，在程序执行到最后一页时，您就可以提交试卷了
 ## 演示视频  
 
-https://github.com/JesterHey/auto-labsafe-exam/assets/144512889/1f0f81f0-fdc7-4c27-a26f-7e22bde012aa
+
+
+https://github.com/JesterHey/auto-labsafe-exam/assets/144512889/a0c289a9-c39a-4bb9-9500-6b722a2a5667
+
+
 
 ## 关于题库
 网站似乎对于不同专业的考试抽取题目的比例不同，如有自行构建题库的需要，您可以修改**题库抓取.py**中的相应参数进行抓取  
