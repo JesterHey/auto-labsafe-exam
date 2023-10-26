@@ -12,7 +12,7 @@ root.title("欢迎")
 label1 = tk.Label(root, text="湖南大学实验室安全考试自动答题程序", font=('Arial', 16))
 label1.pack(pady=10)
 
-label2 = tk.Label(root, text="请确认定使用校园网", font=('Arial', 14))
+label2 = tk.Label(root, text="请确认使用校园网和Chrome浏览器", font=('Arial', 14))
 label2.pack(pady=10)
 
 # 设置窗口大小并使其居中
@@ -41,7 +41,7 @@ def get_input(event=None):
     root.destroy()  # 关闭窗口
 
 root = tk.Tk()
-root.title("登录窗口(全部输入完后按回车)")
+root.title("登录")
 
 # 设置窗口大小并使其居中
 window_width = 300
