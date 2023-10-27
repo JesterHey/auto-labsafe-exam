@@ -4,7 +4,7 @@
 ## 环境配置  
 1. 确保安装Google Chrome浏览器和对应版本的驱动chromedriver  
    [谷歌浏览器下载](https://www.google.com/intl/zh-CN/chrome/)  
-   [谷歌浏览器驱动下载(请下载对应大版本)](https://googlechromelabs.github.io/chrome-for-testing/)  
+   [谷歌浏览器驱动下载(请下载对应浏览器版本的驱动版本)](https://googlechromelabs.github.io/chrome-for-testing/)  
    下载完成后，将chromedriver配置到相应位置，具体教程如下：  
    [谷歌浏览器驱动chromedriver配置教程](https://www.cnblogs.com/lfri/p/10542797.html)
 2. 所需Python库  
