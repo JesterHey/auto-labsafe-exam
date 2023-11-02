@@ -7,10 +7,13 @@
    [谷歌浏览器驱动下载(请下载对应浏览器版本的驱动版本)](https://googlechromelabs.github.io/chrome-for-testing/)  
    下载完成后，将chromedriver配置到相应位置，具体教程如下：  
    [谷歌浏览器驱动chromedriver配置教程](https://www.cnblogs.com/lfri/p/10542797.html)
-2. 所需Python库  
+2. 所需Python库
+   * selenium
+   * lxml
+       
    在电脑(或者你的虚拟环境)的终端依次输入  
-  * selenium `pip install selenium`
-  * lxml `pip install lxml`
+`pip install selenium`  
+`pip install lxml`
 
 ## 使用方法
 1. 下载本项目的压缩包并解压在合适位置
