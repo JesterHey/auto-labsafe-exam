@@ -11,7 +11,7 @@ import csv
 # opt.add_argument('--headless')
 username = input('请输入学号')
 password = input('请输入密码')
-for _ in range(1):
+for _ in range(5):
     url = 'https://labsafe.hnu.edu.cn/labexam/index.php'
     safari = Chrome()
     safari.get(url)
