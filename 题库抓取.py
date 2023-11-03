@@ -9,6 +9,8 @@ import csv
 # opt= Options()
 # opt.add_experimental_option("detach", True)
 # opt.add_argument('--headless')
+username = input('请输入学号')
+password = input('请输入密码')
 for _ in range(1):
     url = 'https://labsafe.hnu.edu.cn/labexam/index.php'
     safari = Chrome()
@@ -16,8 +18,6 @@ for _ in range(1):
     time.sleep(1)
     el = safari.find_element(By.XPATH,'//*[@id="formExam"]/div/a/input')
     el.click()
-    username = input('请输入学号')
-    password = input('请输入密码')
     safari.find_element(By.XPATH,'//*[@id="username"]').send_keys(username)
     time.sleep(1)
     safari.find_element(By.XPATH,'//*[@id="password"]').send_keys(password)
